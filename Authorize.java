@@ -69,12 +69,9 @@ public class Authorize extends Activity {
 			BackGroudSeletor.setPix(pix);
 
 			try {
-				Bundle bundle = getIntent().getExtras();
-//				clientId = Util.getConfig().getProperty("APP_KEY");// bundle.getString("APP_KEY");
-//				redirectUri = Util.getConfig().getProperty("REDIRECT_URI");// bundle.getString("REDIRECT_URI");
-				
-				clientId = bundle.getString("APP_KEY");
-				redirectUri = bundle.getString("REDIRECT_URI");
+				// Bundle bundle = getIntent().getExtras();
+				clientId = Util.getConfig().getProperty("APP_KEY");// bundle.getString("APP_KEY");
+				redirectUri = Util.getConfig().getProperty("REDIRECT_URI");// bundle.getString("REDIRECT_URI");
 				
 				if (clientId == null || "".equals(clientId)
 						|| redirectUri == null || "".equals(redirectUri)) {
