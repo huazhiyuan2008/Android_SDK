@@ -10,8 +10,6 @@ Android_SDK
     @Override
     public void onWeiBoNotInstalled() {            
         Intent i = new Intent(activity, Authorize.class);
-        i.putExtra("APP_KEY", "YOUR_APP_KEY");
-        i.putExtra("REDIRECT_URI", "YOUR_REDIRECT_URI");
         activity.startActivityForResult(i, 1001);
     }
 
